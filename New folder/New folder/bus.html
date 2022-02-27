@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus</title>
+    <style>
+      *{
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+      }
+
+      body{
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          
+      }
+     
+      .metro{
+          width: 700px;
+          height: 350px;
+          background-color: #274472;
+          display: flex;
+          justify-content: center;
+          position: relative;
+          align-items: center;
+          border-top-left-radius: 90px;
+          border-top-right-radius: 15px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          margin-right: 20px;
+          animation-name: train;
+          animation-duration: 6s;
+          animation-delay: 1s;
+          animation-fill-mode: forwards;
+         
+        
+      }
+
+      @keyframes train{
+          from{right: 0px;}
+          to{ right: 630px;}
+      }
+
+      .metro::before{
+          content: "";
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          background-color: #0C2D48;
+          clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+          border-radius: 100%;
+          top: 310px;
+          left: 90px;
+          animation-name: try;
+          animation-duration: 6s;
+          animation-delay: 1s;
+         
+      }
+
+      .metro::after{
+          content: "";
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          background-color: #0C2D48;
+          border-radius: 100%;
+          clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+          top: 310px;
+          right: 100px;
+          animation-name: try;
+          animation-duration: 6s;
+          animation-delay: 1s;
+      }
+
+      
+
+      @keyframes try{
+          from{transform: rotate(0deg);}
+          to{ transform: rotate(-360deg);}
+      }
+      .box{
+          width: 570px;
+          height: 250px;
+          background-color: #4C5270;
+          border-top-left-radius: 70px;
+          border-bottom-left-radius: 15px;
+          display: flex;
+          align-items: center;
+          padding: 20px;
+      
+      }
+
+      .door{
+          width: 200px;
+          height: 200px;
+          background-color:  #E7F2F8;
+          opacity: 0.4;
+          position: relative;
+          border-radius: 20px;
+          
+      }
+
+      .door div{
+         width: 100px;
+         height: 200px;
+         border-radius: 20px;
+         border: 1px solid black;
+
+      }
+
+      .door1{
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          background-color: #5885AF;
+          animation-name: bat;
+          animation-duration: 5s;
+          animation-delay: 7s;
+          animation-iteration-count: 2;
+          animation-direction: alternate;
+      }
+
+      @keyframes bat{
+       from{ width: 100px; }
+       to{ width: 10px;}
+   }
+      .door2{
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          background-color: #5885AF;
+          animation-name: box;
+          animation-duration: 5s;
+          animation-delay: 7s;
+          animation-iteration-count: 2;
+          animation-direction: alternate;
+      }
+
+      @keyframes box{
+       from{ width: 100px; }
+       to{ width: 10px;}
+   }
+
+             
+      .window{
+          width: 300px;
+          height: 150px;
+          background-color: #5885AF;
+          border-radius: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 20px;
+          margin-left: 30px;
+        
+      }
+
+      .window1{
+        width: 100px;
+          height: 100px;
+          background-color: #E7F2F8;
+          opacity: 0.7;
+          margin: 20px;     
+          border-radius: 10px;   
+      }
+      
+     
+      hr{
+          width: 100%;
+          height: 10px;
+          background-color: #000;
+          position: absolute;
+          top: 610px;
+
+      }
+
+      .head{
+          position: absolute;
+          top: 10px;
+          color: #fff;
+          
+      }
+
+    </style>
+</head>
+<body>
+  
+    <div class="metro">
+      <div class="head"><marquee behavior="" direction=""><h2>Sector 63 Bhartiya Tech Noida</h2></marquee> </div>
+      <div class="box">
+          <div class="door">
+              <div class="door1"></div>
+              <div class="door2"></div>
+          </div>
+
+          <div class="window">
+              <div class="window1"></div>
+              <div class="window1"></div>
+              <div class="window1"></div>
+          </div>
+      </div>
+    </div>
+
+  <hr>
+</body>
+</html>
+

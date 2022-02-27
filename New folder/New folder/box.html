@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+     *{
+         margin: 0px;
+         padding: 0px;
+         box-sizing: border-box;
+     }
+
+     .container{
+         width: 100%;
+         height: 70vh;
+         background: gray;
+         display: flex;
+     }
+
+     .left{
+         width: 35%;
+         height: 70vh;
+         background: #FAE8E0;
+         background-image: url("image/logo.png");
+         background-size: cover;
+         background-position: 100% 100%;
+         
+     }
+
+     .left .left-in{
+           color: #000;
+           /* width: 35%; */
+           height: 70vh;
+           background: #FAE8E0;
+           padding: 200px 40px;
+           display: none;
+           text-align: justify;
+           
+        }
+
+     .left .left-in p{
+           font-size: 30px;
+           
+     }
+
+     .left:hover .left-in{
+          display: block;
+     }
+     
+    
+     .right{
+         width: 65%;
+         height: 70vh; 
+         background: #F8FAFD;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-content: space-around;
+         padding: 20px;
+     }
+
+     .right-1{
+         height: 10vh;
+         margin: 40px;
+         padding: 20px;
+         font-size: 20px;
+        
+     }
+
+     .right-1 p{
+         color: #000;
+     }
+
+    
+     .right-2{
+         margin: 40px;
+         padding: 12px;
+         text-align: center;
+     }
+
+     .right-2 a{
+       margin: 10px 30px;
+       text-decoration: none;
+       font-size: 25px;
+       font-weight: bold;
+       color: #A91B60;
+     }
+
+     a:hover{
+        color: #000;
+    }
+
+    </style>
+</head>
+<body>
+    <section>
+     <div class="container">
+         <div class="left">
+             <div class="left-in">
+                 <p>Our Happiness Guarantee:<br>
+                You will Love Your Havenly <br>
+                experience or Your money back.<br>
+            It's as simple as that.</p>
+             </div>
+         </div>
+         <div class="right">
+             <div class="right-1">
+                 <p id="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. A ve cum earum officia delectus ea adipisci ipsa eveniet blanditiis recusandae laboriosam!"</p>
+                </div>
+             <div class="right-2">
+                 <a href="" id="item1">Google</a>
+                 <a href="" id="item2">Instagram</a>
+                 <a href="" id="item3">Facebook</a>
+                 <a href="" id="item4">Twiter</a>
+             </div>
+         </div>
+     </div>
+    </section>
+</body>
+</html>

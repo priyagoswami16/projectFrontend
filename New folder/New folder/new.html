@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{ 
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+        
+      }
+      
+      body{
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .box{
+          width: 200px;
+          height: 200px;
+          background: brown;
+          position: relative;
+      }
+
+      .box1{
+          width: 200px;
+          height: 200px;
+          background: red;
+          position: absolute;
+          /* top: -20px;
+          left: -190px;  */
+        
+          
+      }
+      .box:hover .box1{
+        animation-name: fill;
+          animation-duration: 4s;
+      }
+
+      @keyframes fill{
+          from{  top: 0px; left: 0px; }
+          to {width: 100px; height: 100px; top: -30px; left: -90px;}
+      }
+
+    
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

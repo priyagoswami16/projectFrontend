@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .text{
+         display: none;
+     }
+     .text{
+         display: block;
+     }
+     
+     </style>
+</head>
+<body>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione id recusandae quas harum tempore doloribus, 
+        autem nulla nostrum voluptatem repudiandae consequuntur? Pariatur, accusamus itaque! Vel ut porro quisquam incidunt?</p>
+    <button id="field">Click</button>
+
+   <script>
+
+//   function box(){
+//          document.getElementById("text").innerHTML="hello word";
+//   }
+
+     let btn = document.getElementById("field");
+     let text = document.getElementByClass("text");
+     btn.addEventListener("click",function(){
+         text.innerText="hello";
+         text.style.color="red";
+        text.classList.add(".active");
+     });
+
+   </script> 
+</body>
+</html>

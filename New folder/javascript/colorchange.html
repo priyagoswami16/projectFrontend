@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       .data{
+           width: 200px;
+           height: 200px;
+           background-color: aqua;
+       }
+   </style>
+
+</head>
+<body>
+
+    <section class="bd" id="bdd">
+    <div class="data">
+        <select name="" id="cell" onclick="code()">
+            <option value="black">Black</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+        </select>
+    </div>
+    </section>
+    <script>
+
+    function code(){
+        
+        let call = document.getElementById("cell").value;
+        
+        console.log(call);
+          if(call == "black"){
+              document.getElementById("bdd").style.background = "black";
+          }else  if(call == "green"){
+              document.getElementById("bdd").style.background = "green";
+          }else  if(call == "red"){
+              document.getElementById("bdd").style.background = "red";
+          }else  if(call == "blue"){
+              document.getElementById("bdd").style.background = "blue";
+          }else{
+            document.getElementById("bdd").style.background = "";
+          }
+   }
+
+
+
+    </script>
+</body>
+</html>

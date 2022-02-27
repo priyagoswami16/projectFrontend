@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .......................start home.................. */
+
+.section{
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/tumblr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; 
+    position: relative;  
+    top: 0;
+    left: 0;
+}
+
+.overly{
+    width: 100%;
+    height: 100vh;
+    position: absolute; 
+    background-color: rgba(0,0,0,0.1); 
+    top: 0;
+    left: 0;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 9px #fff;
+    /* background: #ffff; */
+    /* opacity: 0.7; */
+    padding: 0px 20px;
+}
+
+.header .logo{
+  /* background: olive; */
+  padding: 10px 25px;
+}
+
+.header .logo h1{
+    margin-top: 3px;
+    color: #fff;
+}
+
+/* .header nav{
+    background: red;
+  } */
+
+.header nav ul{
+    /* background: orange; */
+    margin: 10px;
+}  
+
+.header nav ul li{
+   display: inline-block;
+   padding: 10px 20px;
+   list-style-type: none;
+}  
+
+.header nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+ } 
+ 
+ .header .btn{
+     padding: 10px 20px;
+     border: none;
+     outline: none;
+     background: #FFA384;
+     color: #000;
+     font-size: 12px;
+     font-weight: bold;
+     border-radius: 10px;
+ }
+
+ .container{
+     width: 40%;
+     height: 180px;
+     /* background: red; */
+     text-align: center;
+     position: absolute;
+     left: 40%;
+     top: 300px;
+     padding: 10px 20px;
+     color: #fff;
+     text-shadow: 2px 2px 1px #000;
+     
+ }
+
+ .container .row p{
+      margin-top: 10px;
+      text-shadow: 1px 1px 1px #000;
+ }
+
+ .container .row .btn1{
+    margin-top: 12px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: #68BBE3;
+    border-radius: 10px;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ .container1{
+    width: 60%;
+    height: 120px;
+    background: #68BBE3;
+    box-shadow: 2px 2px 3px #000;
+    position: absolute;
+    left: 20%;
+    top: 680px;
+    
+} 
+
+.container1 .row1{
+     padding: 10px 20px;
+     display: flex;
+     flex-direction: column;
+     
+}
+
+.container1 .row1 h1{
+         margin-bottom: 8px;
+         margin-left: 10px;
+         color: #fff;
+}
+
+.container1 .row1 .col{
+         display: flex;
+         justify-content: space-between;
+         
+}
+
+.container1 .row1 .col button{
+   margin: 10px 10px;
+   border: none;
+   outline: none;
+   font-size: 15px;
+   font-weight: bold; 
+   border-radius: 20px;   
+}
+
+.container1 .row1 .col .btn2{
+    padding: 10px 50px;
+}
+
+.container1 .row1 .col .btn3{
+    padding: 10px 50px;
+}
+
+.container1 .row1 .col .btn4{
+    padding: 10px 50px;
+}
+
+.container1 .row1 .col .btn5{
+    background-color: #055C9D;
+    color: #fff;
+    padding: 10px 40px;
+}
+
+/* .............end home.................. */
+
+/* ............project................ */
+
+.project{
+    width: 100%;
+    height: 165vh;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.container-2{
+    width: 70%;
+    height: 150vh;
+    /* background: chocolate; */
+    margin: auto;
+    padding-top: 80px;
+}
+ 
+.container-2 h1{
+    text-align: center;
+}
+
+.row-2{
+    height: 40vh;
+    margin-top: 50px;
+    display: flex;
+    box-shadow: 2px 2px 3px #000;
+    /* background: cornflowerblue; */
+}
+
+.row-2 .col-2{
+    width: 50%;
+
+    /* background: darkblue; */
+   
+}
+
+.row-2 .col-2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.row-2 .col-2 h2{
+ margin-top: 60px;
+ margin-left: 50px;
+ margin-right: 10px;
+}
+
+.row-2 .col-2 p{
+    margin-top: 10px;
+    margin-left: 50px;
+    text-align: justify;
+    margin-right: 10px;
+   }
+
+   .bttn{
+       padding: 10px 30px;
+       border: none;
+       outline: none;
+       cursor: pointer;
+       border-radius: 20px;
+       /* background-color: #68BBE3 ; */
+       margin-top: 10px;
+       margin-left: 50px;
+       font-weight: bold;
+       margin-right: 10px;
+   }
+
+   /* .............end project.................. */
+
+   /* ..........landingpage......... */
+     
+   .section-3{
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url("images/coffee.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+    /* background-color: #68BBE3; */
+    
+}
+
+.overlay{
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    background-color: rgba(127, 17, 224, 0.2);
+    top: 0;
+    left: 0;
+}
+
+.container-3{
+    width: 70%;
+    margin: auto;
+    height: 20vh;
+    /* background-color: brown; */
+  
+}
+
+.container-3 .row-3{
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-3 .row-3 h2{
+   color: #fff;
+}
+
+.container-3 .row-3 .btn6{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #055C9D;
+ }
+   /* .........end .landingpage......... */
+
+
+   /* .........services................... */
+   
+   .services{
+    width: 100%;
+    height: 70vh;
+    /* background: #68BBE3; */
+    background-color: rgba(0,0,0,0.1);
+}
+
+.container-4{
+    width: 70%;
+    height: 70vh;
+    margin: auto;
+    /* background: cornflowerblue; */
+}
+
+.container-4 h1{
+    text-align: center;
+    padding: 30px;
+    
+}
+
+.container-4 .row-4{
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: darkblue; */
+    justify-content: center;
+    align-items: center;
+}
+
+.row-4 .col-4{
+    margin: 10px 15px;
+    padding: 0px 10px;
+    width: 500px;
+    /* background: crimson; */
+    
+}
+
+.row-4 .col-4 li p{
+    text-align: justify;
+    margin-top: 10px;
+}
+
+/* .row-4 .col-4 {
+    text-align: justify;
+} */
+  
+    /* ........end.services................... */
+
+
+/* ............footer................     */
+
+.footer{
+    width: 100%;
+    height: 60vh;
+    background: #E7F2F8;
+}
+
+.container-5{
+    width: 70%;
+    height: 60vh;
+    margin: auto;
+   
+}
+
+.container-5 .row-5{
+    display: flex;
+    height: 60vh;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 1px 2px #000,-1px -1px 2px #000;
+}
+
+.col-5 .icon i{
+    margin-right: 10px;
+}
+
+/* ............end footer................     */

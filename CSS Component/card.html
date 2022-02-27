@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Card</title>
+    <style>
+   
+   *{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Serif', serif;
+   }
+
+   body{
+       height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: aliceblue;
+   }
+   
+   section .card .image{
+       width: 140px;
+       height: 140px;
+       background-color: #7d2ae8;
+       border-radius: 50%;
+       padding: 3px;
+    
+   }
+
+   section .card .image img{
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       border-radius: 50%;
+       border: 4px solid #fff;
+     
+   }
+
+   /* .content{
+       background-color: aqua;
+   } */
+
+   .card{
+       background: #fff;
+       border-radius: 20px;
+       position: relative;
+       margin: 20px 0px;
+       width: 280px;
+       
+   }
+
+   .card::before{
+       content: "";
+       position: absolute;
+       height: 40%;
+       width: 100%;
+       background: #7d2ae8;
+       border-radius: 20px 20px 0 0;
+    
+
+   }
+
+   .card .card-content{
+       padding: 30px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       position: relative;
+       z-index: 1;
+      
+   }
+
+   .card .media-icon{
+       position: absolute;
+       top: 10px;
+       right: 20px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .card .media-icon i{
+       margin-top: 10px;
+       color: #fff;
+       opacity: 0.6;
+       transition: all 0.3s ease ;
+       cursor: pointer;
+   }
+
+   .card .media-icon i:hover{
+       opacity: 1;
+   }
+
+   .information{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-top: 10px;
+       color: #333;
+   }
+
+   .information .name{
+       font-size: 20px;
+       font-weight: 600;
+   }
+
+   .information .info{
+       font-size: 15px;
+       font-weight: 500;
+   }
+
+   .rate{
+       display: flex;
+       align-items: center;
+       margin-top: 18px;
+   }
+
+   .rate i{
+       color: #7d2ae8;
+       font-size: 18px;
+       margin: 0 3px;
+   }
+
+   .card .button{
+       display: flex;
+       width: 100%;
+       justify-content: space-around;
+       margin-top: 10px;
+     
+   }
+
+   .card .button button{
+       outline: none;
+       border: none;
+       background: #7d2ae8;
+       padding: 8px 22px;
+       color: #fff;
+       border-radius: 20px;
+       font-size: 14px;
+       text-transform: capitalize;
+       cursor: pointer;
+   }
+
+   .card .button button:hover{
+       color: #333;
+   }
+    </style>
+</head>
+<body>
+    <section>
+
+     <div class="container">
+         <div class="content">
+
+             <div class="card">
+                 <div class="card-content">
+                     <div class="image">
+                         <img src="image/flow1.jpg" alt="">
+                     </div>
+
+                     <div class="media-icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                     </div>
+
+                     <div class="information">
+                         <span class="name">Some Name</span>
+                         <span class="info">Web Development</span>
+                     </div>
+
+                   <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                   </div>
+
+                  <div class="button">
+                    <button class="about">about me</button>
+                    <button class="hire">hire me</button>
+                  </div>
+
+                 </div>
+             </div>
+
+         </div>
+     </div>
+
+
+
+    </section>
+</body>
+</html>

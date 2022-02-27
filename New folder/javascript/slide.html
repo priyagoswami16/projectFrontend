@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slide.css">
+    <title>SlideShow</title>
+</head>
+<body>
+ 
+    <div class="slide-container">
+
+        <div class="slide-image" id="image">
+            <img src="image/coffee.jpg" alt="">
+            <div class="text">caption 1</div>
+        </div>
+
+        <div class="slide-image"  id="image">
+            <img src="image/coffee2.jpg" alt="">
+            <div class="text">caption 2</div>
+        </div>
+
+        <div class="slide-image"  id="image">
+            <img src="image/coffee.jpg" alt="">
+            <div class="text">caption 3</div>
+        </div>
+
+        <div class="slide-image"  id="image">
+            <img src="image/coffee2.jpg" alt="">
+            <div class="text">caption 4</div>
+        </div>
+       
+        <span class="prev" onclick="controller(-1)">&#10094</span>
+        <span class="next" onclick="controller(1)">&#10095</span>
+
+    </div>
+
+<script src="slide.js"></script>
+</body>
+</html>

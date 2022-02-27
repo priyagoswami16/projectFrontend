@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bat ball</title>
+
+    <style>
+       
+       .container{
+           width: 100%;
+           height: 100vh;
+           background: darkblue;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           position: relative;
+       }
+
+       .bat{
+           width: 100px;
+           height: 300px;
+           background: darkcyan;
+           position: absolute;
+           left: 50px;
+          
+       }
+
+       .bat:hover{
+           transform: rotate(-20deg);
+       }
+
+       .ball{
+           width: 100px;
+           height: 100px;
+           border-radius: 50%;
+           background: darkgoldenrod;
+           position: absolute;
+           left: 1400px;
+           animation-name: example;
+           animation-duration: 4s;
+           animation-delay: -2s;
+         
+       }
+
+   
+/* 
+@keyframes example {
+
+    from{
+        right: 0px;
+    }
+    to{
+        left: 200px;
+    }
+
+  /* 0%   { right:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  50%  { left:400px; top:400px;} */
+  /* 0%   { left: 0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  50%  { left:400px; top:400px;} */
+  /* 75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;} */ 
+
+/*    
+       .ball:hover{
+             transform: ;
+       } */ 
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="bat"></div>
+      <div class="ball">2</div>
+
+    </div>
+</body>
+</html>

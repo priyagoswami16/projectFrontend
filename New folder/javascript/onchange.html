@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    /* .para2{
+        display: none;
+    }
+
+    .btn2{
+        display: none;
+    } */
+
+
+    #text{
+        display: none;
+    }
+
+    #btn1{
+        display: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: red;
+    }
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- ............first try................. -->
+
+    <!-- <p class="para1" id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Molestiae perspiciatis voluptatum beatae eos sed nihil at ab reprehenderit suscipit earum, v
+        oluptatibus odit aliquam, asperiores totam dolorum iste voluptates ipsa exercitationem!</p>
+    <button class="btn1" id="b1" onclick="more()">more</button>
+
+    <p class="para2" id="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Molestiae perspiciatis voluptatum beatae eos sed nihil at ab reprehenderit suscipit earum, v
+        oluptatibus odit aliquam, asperiores totam dolorum iste voluptates ipsa exercitationem!</p>
+    <button class="btn2" id="b2" onclick="less()">less</button>-->
+
+<!-- <script>
+
+   function more(){
+       document.getElementById("text1").style.display = "block";
+       document.getElementById("b2").style.display = "block";
+   }
+
+   function less(){
+       document.getElementById("text1").style.display = "none";
+       document.getElementById("b2").style.display = "none";
+   } 
+
+</script> -->
+
+
+
+
+ <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero, 
+     nostrum possimus maiores nesciunt ratione iste laborum quia et <a href="#" id="btn" onclick="more()">.............show more</a>
+     <span id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim totam debitis, saepe modi impedit tempora voluptas itaque reprehenderit dolor, temporibus,
+          provident non sit repellendus velit aliquid in autem voluptates vero?</span> <a href="#" id="btn1" onclick="less()">show less</a></p>
+
+
+<script>
+
+   function more(){
+       document.getElementById("text").style.display = "inline";
+       document.getElementById("btn1").style.display = "inline";
+       document.getElementById("btn").style.display = "none";
+   }
+
+   function less(){
+       document.getElementById("text").style.display = "none";
+       document.getElementById("btn1").style.display = "none";
+       document.getElementById("btn").style.display = "inline";
+   }
+
+
+</script>
+
+</body>
+</html>
